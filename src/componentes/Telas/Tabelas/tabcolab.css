@@ -1,0 +1,17 @@
+.table tbody tr:nth-child(odd) {
+    background-color: #e6f7e6 !important; /* Verde claro para linhas ímpares */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #ebfaeb !important; /* Verde mais escuro para linhas pares */
+}
+
+.table tbody tr:hover {
+    background-color: #17ec17 !important; /* Verde intenso ao passar o mouse */
+    cursor: pointer; 
+}
+
+.table th,
+.table td {
+    text-align: center; 
+}
