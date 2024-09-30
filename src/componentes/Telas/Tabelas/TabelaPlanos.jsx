@@ -22,6 +22,7 @@ export default function TabelaPlanos(props) {
                         <th>Parte Interessada</th>
                         <th>Data do Projeto</th>
                         <th>Capital Inicial</th>
+                        <th>Qtd de Colaboradores</th>
                         <th>Ações</th>
                        
                     </thead>
@@ -32,10 +33,10 @@ export default function TabelaPlanos(props) {
                           <tr>
                             <td>{plano.codigo}</td>
                             <td>{plano.nomeprojeto}</td>
-                            <td>{plano.parteinteressada_codigo}</td>
-                    
-                            <td>{new Date(plano.datainicio_projeto).toLocaleDateString('pt-BR')}</td>
+                            <td>{plano.parteinteressada.nome}</td>
+                            <td>{plano.datainicio}</td>
                             <td>R$ {plano.totalcapital.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+                            <td>{plano.colaboradores.length}</td>
                          
                          
                           

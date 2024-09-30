@@ -25,7 +25,7 @@ export default function FormCadPlano(props) {
                 setPartesinteressadas(resposta.listaPartesinteressadas);
             }
         })
-    },[])
+    },[]);
 
     //O estado venda possui correlação com a venda gerenciada no backend
     function pegaDataAtual(){
@@ -115,7 +115,7 @@ export default function FormCadPlano(props) {
                     </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group as={Col} md="6" controlId="dataPlano">
-                    <Form.Label style={{ color: 'white' }}>Data do Pedido</Form.Label>
+                    <Form.Label style={{ color: 'white' }}>Data do Projeto</Form.Label>
                     <Form.Control
                         type="date"
                         required
@@ -139,7 +139,7 @@ export default function FormCadPlano(props) {
                         required
                          />
                     <Form.Control.Feedback type="invalid">
-                        Por favor, informe o valor total do pedido
+                        Por favor, informe o valor total do projetp
                     </Form.Control.Feedback>
                 </Form.Group>
             </Row>

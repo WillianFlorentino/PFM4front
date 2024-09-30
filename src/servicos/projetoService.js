@@ -12,7 +12,7 @@ export async function gravarProjeto(projeto, token){
     });
     
     if (!resposta.ok) {
-        const mensagemErro = await resposta.text(); // Para capturar mensagens de erro mais específicas
+        const mensagemErro = await resposta.text(); 
         throw new Error(`Erro ao gravar projeto: ${mensagemErro}`);
     }
     
@@ -30,7 +30,7 @@ export async function buscaTodosProjetos(token){
     });
   
     const dados = await resposta.json();
-    console.log(dados); // Adicione isso aqui
+    console.log(dados); 
   
     return dados;
   }
